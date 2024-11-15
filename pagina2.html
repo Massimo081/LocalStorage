@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <button><a href="index.html">Voltar</a></button>
+    <h1>Informações do Perfil</h1>
+    <form>   
+        <label for="">Nome:</label>
+        <label for="" id="nome1"></label>
+        <label for="">Email:</label>
+        <label for="" id="email1"></label>
+        <label for="">Telefone:</label>
+        <label for="" id="tel1"></label>
+        <label for="">CPF:</label>
+        <label for="" id="cpf1"></label>
+        <label for="">Senha:</label>
+        <label for="" id="senha1"></label>
+    </form>
+    
+    <script>
+        addEventListener("DOMContentLoaded", () => {
+            var recebe_nome = localStorage.getItem("nome");
+            document.getElementById("nome1").innerHTML = recebe_nome;
+
+            var recebe_email = localStorage.getItem("email");
+            document.getElementById("email1").innerHTML = recebe_email;
+
+            var recebe_telefone = localStorage.getItem("telefone");
+            document.getElementById("tel1").innerHTML = recebe_telefone;
+
+            var recebe_cpf = localStorage.getItem("cpf");
+            document.getElementById("cpf1").innerHTML = recebe_cpf;
+
+            var recebe_senha = localStorage.getItem("senha");
+            document.getElementById("senha1").innerHTML = recebe_senha;
+        })
+    </script>
+</main>
+</body>
+</html>
